@@ -18,11 +18,10 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ### Screenshot
 
-
 <img src="./images/screenshot/mobile.png" width="350">
-![](./images/screenshot/Desktop.png)
+<img src="./images/screenshot/Desktop.png">
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://github.com/mani-cmd/nft-preview-card-component)
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   Solution URL: [GitHub](https://github.com/mani-cmd/nft-preview-card-component)
+-   Live Site URL: [Live Site](https://nft-preview-card-xi.vercel.app/)
