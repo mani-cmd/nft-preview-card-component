@@ -1,0 +1,110 @@
+/* Colors in root */
+
+:root {
+	--main-bg: hsl(217, 54%, 11%);
+	--card-bg: hsl(216, 50%, 16%);
+	--line-clr: hsl(215, 32%, 27%);
+	--accent-text-clr: hsl(215, 51%, 70%);
+	--text-clr: hsl(0, 0%, 100%);
+	--cyan-clr: hsl(178, 100%, 50%);
+}
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: inherit;
+}
+
+body {
+	font-size: 18px;
+	font-family: "Outfit", sans-serif;
+	background-color: var(--main-bg);
+	color: var(--text-clr);
+	display: grid;
+	place-items: center;
+}
+.card {
+	margin-block-start: 1.5rem;
+	background: var(--card-bg);
+	width: 16em;
+	padding: 1.2em;
+	border-radius: 12px;
+}
+
+.card > img {
+	border-radius: 0.4em;
+	width: 100%;
+	position: relative;
+}
+
+.card > img::after {
+	content: "";
+	display: block;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 20;
+	background-color: hsl(178, 100%, 50%);
+}
+
+.card h1 {
+	font-size: 1.5rem;
+	margin-block-start: 0.8em;
+}
+.card h1:hover {
+	cursor: pointer;
+	color: var(--cyan-clr);
+}
+.card > p {
+	margin-block-start: 0.8em;
+	color: var(--accent-text-clr);
+}
+.card .card-info {
+	margin-block: 0.8em;
+	display: flex;
+	justify-content: space-between;
+}
+.btn {
+	color: inherit;
+	text-decoration: none;
+	font-size: 1rem;
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+}
+
+.btn.accent {
+	color: var(--cyan-clr);
+}
+.user-info {
+	display: flex;
+	gap: 1em;
+	padding-block: 0.8em 0.2em;
+	align-items: center;
+	border-top: 1px solid var(--line-clr);
+}
+.user-info > p {
+	color: var(--accent-text-clr);
+	font-size: 1rem;
+}
+.user-info > p > span {
+	color: var(--text-clr);
+}
+.user-info > p > span:hover {
+	color: var(--cyan-clr);
+	cursor: pointer;
+}
+.user-info img {
+	border-radius: 50%;
+	height: 2rem;
+	outline: 1px solid white;
+}
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
